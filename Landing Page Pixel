@@ -34,7 +34,7 @@
     cursor: none;
   }
  
-  /* CUSTOM CURSOR */
+  /* CUSTOM CURSOR — desktop only */
   #cursor {
     width: 16px; height: 16px;
     background: var(--green);
@@ -46,6 +46,10 @@
     clip-path: polygon(0 0, 60% 0, 100% 40%, 100% 100%, 40% 100%, 0 60%);
     transition: transform 0.1s;
     mix-blend-mode: screen;
+  }
+  @media (hover: none), (pointer: coarse) {
+    #cursor { display: none !important; }
+    body { cursor: auto !important; }
   }
  
   /* PIXEL GRID BACKGROUND */
@@ -557,7 +561,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">PX<span>.</span>DEV</div>
+    <div class="nav-logo">GDN<span>.</span>DEV</div>
     <ul class="nav-links">
       <li><a href="#skills">SKILLS</a></li>
       <li><a href="#projects">PROJECTS</a></li>
@@ -574,32 +578,32 @@
     <p class="hero-tag">PLAYER ONE HAS ENTERED</p>
     <h1 class="hero-name">
       HALO, SAYA<br>
-      <span class="highlight">BUDI SANTOSO</span>
+      <span class="highlight">GIDEON M.</span>
     </h1>
-    <p class="hero-role">FULLSTACK DEVELOPER</p>
+    <p class="hero-role">INDUSTRIAL ENGINEER</p>
     <p class="hero-desc">
-      Crafting digital experiences satu pixel dalam satu waktu. Spesialis web app, mobile, dan AI integration — dari Jakarta untuk dunia.
+      Mahasiswa Teknik Industri Universitas Hasanuddin — menggabungkan dunia engineering dengan teknologi digital untuk menciptakan solusi yang efisien & inovatif.
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn btn-primary">▶ LIHAT PROYEK</a>
-      <a href="#contact" class="btn btn-secondary">✉ HIRE ME</a>
+      <a href="#contact" class="btn btn-secondary">✉ HUBUNGI SAYA</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-num">5+</span>
-        <span class="stat-label">YEARS EXP</span>
+        <span class="stat-num">UNHAS</span>
+        <span class="stat-label">UNIVERSITAS</span>
       </div>
       <div class="stat">
-        <span class="stat-num">40+</span>
-        <span class="stat-label">PROJECTS</span>
+        <span class="stat-num">TI</span>
+        <span class="stat-label">JURUSAN</span>
       </div>
       <div class="stat">
-        <span class="stat-num">20+</span>
-        <span class="stat-label">CLIENTS</span>
+        <span class="stat-num">AKTIF</span>
+        <span class="stat-label">STATUS</span>
       </div>
       <div class="stat">
         <span class="stat-num">∞</span>
-        <span class="stat-label">COFFEE CUPS</span>
+        <span class="stat-label">SEMANGAT</span>
       </div>
     </div>
   </div>
@@ -638,40 +642,40 @@
     </div>
     <div class="skills-grid observe">
       <div class="skill-card">
-        <span class="skill-icon">⚛️</span>
-        <div class="skill-name">REACT / NEXT.JS</div>
-        <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
-        <div class="skill-lvl">LVL 92</div>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🟩</span>
-        <div class="skill-name">NODE.JS</div>
-        <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
-        <div class="skill-lvl">LVL 88</div>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🐍</span>
-        <div class="skill-name">PYTHON / AI</div>
+        <span class="skill-icon">📊</span>
+        <div class="skill-name">ANALISIS DATA</div>
         <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
         <div class="skill-lvl">LVL 80</div>
       </div>
       <div class="skill-card">
-        <span class="skill-icon">🗄️</span>
-        <div class="skill-name">DATABASE</div>
-        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-        <div class="skill-lvl">LVL 85</div>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">📱</span>
-        <div class="skill-name">REACT NATIVE</div>
+        <span class="skill-icon">⚙️</span>
+        <div class="skill-name">LEAN / SIX SIGMA</div>
         <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
         <div class="skill-lvl">LVL 75</div>
       </div>
       <div class="skill-card">
-        <span class="skill-icon">☁️</span>
-        <div class="skill-name">AWS / DEVOPS</div>
+        <span class="skill-icon">🐍</span>
+        <div class="skill-name">PYTHON</div>
         <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
         <div class="skill-lvl">LVL 70</div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">📐</span>
+        <div class="skill-name">AUTOCAD / VISIO</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+        <div class="skill-lvl">LVL 72</div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">📈</span>
+        <div class="skill-name">EXCEL / SPSS</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        <div class="skill-lvl">LVL 85</div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🤖</span>
+        <div class="skill-name">AI / OTOMASI</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+        <div class="skill-lvl">LVL 65</div>
       </div>
     </div>
   </div>
@@ -687,14 +691,14 @@
     </div>
     <div class="projects-grid observe">
       <div class="project-card">
-        <div class="project-preview proj-bg-1">🛒</div>
+        <div class="project-preview proj-bg-1">🏭</div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="tag">NEXT.JS</span>
-            <span class="tag cyan">AI</span>
+            <span class="tag">LEAN</span>
+            <span class="tag cyan">ANALISIS</span>
           </div>
-          <div class="project-name">TOKO PINTAR AI</div>
-          <p class="project-desc">Platform e-commerce dengan rekomendasi produk AI dan chatbot penjualan otomatis.</p>
+          <div class="project-name">OPTIMASI LINI PRODUKSI</div>
+          <p class="project-desc">Studi kasus optimasi tata letak pabrik menggunakan metode Systematic Layout Planning untuk efisiensi produksi.</p>
         </div>
         <div class="project-footer">
           <a href="#" class="project-link">▶ LIHAT PROJECT</a>
@@ -705,11 +709,11 @@
         <div class="project-preview proj-bg-2">📊</div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="tag cyan">REACT</span>
-            <span class="tag yellow">PYTHON</span>
+            <span class="tag cyan">PYTHON</span>
+            <span class="tag yellow">DATA</span>
           </div>
-          <div class="project-name">DASHBOARD ANALYTICS</div>
-          <p class="project-desc">Real-time analytics dashboard untuk monitoring bisnis dengan visualisasi data interaktif.</p>
+          <div class="project-name">ANALISIS DATA PRODUKSI</div>
+          <p class="project-desc">Dashboard analitik berbasis Python untuk monitoring KPI produksi dan visualisasi data manufaktur real-time.</p>
         </div>
         <div class="project-footer">
           <a href="#" class="project-link">▶ LIHAT PROJECT</a>
@@ -717,14 +721,14 @@
         </div>
       </div>
       <div class="project-card">
-        <div class="project-preview proj-bg-3">🤖</div>
+        <div class="project-preview proj-bg-3">🔬</div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="tag yellow">PYTHON</span>
-            <span class="tag red">ML</span>
+            <span class="tag yellow">ERGONOMI</span>
+            <span class="tag red">RISET</span>
           </div>
-          <div class="project-name">AI CHATBOT SYSTEM</div>
-          <p class="project-desc">Sistem chatbot berbasis LLM untuk layanan pelanggan otomatis 24/7.</p>
+          <div class="project-name">STUDI ERGONOMI KERJA</div>
+          <p class="project-desc">Penelitian analisis beban kerja dan postur kerja operator menggunakan metode REBA & OWAS.</p>
         </div>
         <div class="project-footer">
           <a href="#" class="project-link">▶ LIHAT PROJECT</a>
@@ -732,14 +736,14 @@
         </div>
       </div>
       <div class="project-card">
-        <div class="project-preview proj-bg-4">📱</div>
+        <div class="project-preview proj-bg-4">📦</div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="tag">REACT NATIVE</span>
-            <span class="tag cyan">NODE</span>
+            <span class="tag">SUPPLY CHAIN</span>
+            <span class="tag cyan">EXCEL</span>
           </div>
-          <div class="project-name">MOBILE FINTECH APP</div>
-          <p class="project-desc">Aplikasi keuangan mobile dengan fitur transfer, investasi, dan analisis pengeluaran.</p>
+          <div class="project-name">MANAJEMEN RANTAI PASOK</div>
+          <p class="project-desc">Model simulasi supply chain untuk minimasi biaya persediaan dengan metode EOQ dan safety stock.</p>
         </div>
         <div class="project-footer">
           <a href="#" class="project-link">▶ LIHAT PROJECT</a>
@@ -755,27 +759,27 @@
   <div class="container">
     <div class="section-header observe">
       <span class="section-label">// BATTLE LOG</span>
-      <h2 class="section-title">PENGALAMAN <span>KERJA</span></h2>
+      <h2 class="section-title">PENDIDIKAN & <span>ORGANISASI</span></h2>
       <div class="pixel-divider"></div>
     </div>
     <div class="timeline observe">
       <div class="timeline-item">
-        <div class="timeline-date">2022 — PRESENT</div>
-        <div class="timeline-role">SENIOR FULLSTACK ENGINEER</div>
-        <div class="timeline-company">GoTech Indonesia</div>
-        <p class="timeline-desc">Lead developer untuk platform SaaS B2B dengan 50k+ pengguna aktif. Memimpin tim 5 engineer.</p>
+        <div class="timeline-date">2022 — SEKARANG</div>
+        <div class="timeline-role">S1 TEKNIK INDUSTRI</div>
+        <div class="timeline-company">Universitas Hasanuddin</div>
+        <p class="timeline-desc">Mendalami sistem produksi, manajemen operasional, analisis data industri, dan optimasi proses bisnis berbasis teknologi.</p>
       </div>
       <div class="timeline-item">
-        <div class="timeline-date">2020 — 2022</div>
-        <div class="timeline-role">FULLSTACK DEVELOPER</div>
-        <div class="timeline-company">StartupKita.id</div>
-        <p class="timeline-desc">Membangun sistem backend microservices dan frontend React untuk platform marketplace.</p>
+        <div class="timeline-date">2023 — SEKARANG</div>
+        <div class="timeline-role">ANGGOTA AKTIF</div>
+        <div class="timeline-company">Himpunan Mahasiswa Teknik Industri</div>
+        <p class="timeline-desc">Terlibat aktif dalam kegiatan organisasi, seminar industri, dan proyek pengembangan inovasi kampus.</p>
       </div>
       <div class="timeline-item">
-        <div class="timeline-date">2019 — 2020</div>
-        <div class="timeline-role">JUNIOR DEVELOPER</div>
-        <div class="timeline-company">DigitalNusa Agency</div>
-        <p class="timeline-desc">Pengembangan website dan aplikasi web untuk klien UMKM dan korporasi nasional.</p>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-role">PESERTA KOMPETISI</div>
+        <div class="timeline-company">Industrial Engineering Competition</div>
+        <p class="timeline-desc">Berpartisipasi dalam kompetisi studi kasus teknik industri tingkat nasional antar perguruan tinggi.</p>
       </div>
     </div>
   </div>
@@ -791,32 +795,32 @@
     </div>
     <div class="contact-grid observe">
       <div class="contact-info">
-        <a href="mailto:budi@pixel.dev" class="contact-item">
+        <a href="mailto:gideon@unhas.ac.id" target="_blank" rel="noopener" class="contact-item">
           <span class="contact-icon">✉</span>
           <div>
             <div class="contact-label">EMAIL</div>
-            <div class="contact-value">budi@pixel.dev</div>
+            <div class="contact-value">gideon@unhas.ac.id</div>
           </div>
         </a>
-        <a href="#" class="contact-item">
+        <a href="#" class="contact-item" style="opacity:0.4;cursor:not-allowed;">
           <span class="contact-icon">💼</span>
           <div>
             <div class="contact-label">LINKEDIN</div>
-            <div class="contact-value">linkedin.com/in/budisantoso</div>
+            <div class="contact-value">— belum tersedia —</div>
           </div>
         </a>
-        <a href="#" class="contact-item">
+        <a href="https://github.com/gideon12122005-gif" target="_blank" rel="noopener" class="contact-item">
           <span class="contact-icon">🐙</span>
           <div>
             <div class="contact-label">GITHUB</div>
-            <div class="contact-value">github.com/budisantoso</div>
+            <div class="contact-value">github.com/gideon12122005-gif</div>
           </div>
         </a>
-        <a href="#" class="contact-item">
+        <a href="https://www.google.com/maps/search/Makassar+Sulawesi+Selatan" target="_blank" rel="noopener" class="contact-item">
           <span class="contact-icon">📍</span>
           <div>
             <div class="contact-label">LOKASI</div>
-            <div class="contact-value">Jakarta, Indonesia</div>
+            <div class="contact-value">Makassar, Sulawesi Selatan</div>
           </div>
         </a>
       </div>
@@ -842,44 +846,527 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <div class="footer-logo">PIXEL.DEV</div>
-    <p class="footer-text">CRAFTED WITH <span>♥</span> & TOO MUCH COFFEE — JAKARTA 2025</p>
-    <p class="footer-text" style="margin-top:6px;font-size:14px;">© BUDI SANTOSO. ALL RIGHTS RESERVED.</p>
+    <div class="footer-logo">GIDEON.DEV</div>
+    <p class="footer-text">CRAFTED WITH <span>♥</span> & SEMANGAT MAHASISWA — MAKASSAR 2025</p>
+    <p class="footer-text" style="margin-top:6px;font-size:14px;">© GIDEON MANGLOBARANI — TEKNIK INDUSTRI UNHAS</p>
   </div>
 </footer>
  
+<style>
+/* ===== COMBO COUNTER ===== */
+#combo-display {
+  position: fixed; top: 90px; right: 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px; color: var(--yellow);
+  text-shadow: 0 0 10px var(--yellow);
+  z-index: 5000; pointer-events: none;
+  opacity: 0; transition: opacity 0.3s;
+  text-align: right;
+}
+#combo-display.show { opacity: 1; }
+#combo-num { font-size: 28px; display: block; }
+ 
+/* ===== CLICK LABEL ===== */
+.click-label {
+  position: fixed; pointer-events: none; z-index: 8000;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px; letter-spacing: 1px;
+  animation: clickLabelAnim 0.9s ease forwards;
+}
+@keyframes clickLabelAnim {
+  0%   { opacity: 1; transform: translateY(0) scale(1); }
+  60%  { opacity: 1; transform: translateY(-32px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-56px) scale(0.8); }
+}
+ 
+/* ===== PIXEL EXPLOSION ===== */
+.px-particle {
+  position: fixed; pointer-events: none; z-index: 7000;
+  image-rendering: pixelated;
+  animation: pxFly var(--dur, 0.7s) ease forwards;
+}
+@keyframes pxFly {
+  0%   { opacity: 1; transform: translate(0,0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0); }
+}
+ 
+/* ===== RIPPLE ===== */
+.ripple-wave {
+  position: fixed; pointer-events: none; z-index: 6000;
+  border-radius: 0;
+  border: 3px solid var(--rc, #00ff88);
+  animation: rippleAnim 0.7s ease forwards;
+  transform: translate(-50%, -50%);
+}
+@keyframes rippleAnim {
+  0%   { width: 0; height: 0; opacity: 0.8; }
+  100% { width: 140px; height: 140px; opacity: 0; }
+}
+ 
+/* ===== MINI SPRITE ===== */
+.mini-sprite {
+  position: fixed; pointer-events: none; z-index: 7500;
+  image-rendering: pixelated;
+  animation: spriteFall var(--fdur, 2s) ease-in forwards;
+}
+@keyframes spriteFall {
+  0%   { opacity: 1; transform: translate(0,0) rotate(0deg) scale(1); }
+  20%  { opacity: 1; transform: translate(var(--sx), -60px) rotate(20deg) scale(1.1); }
+  100% { opacity: 0; transform: translate(var(--sx2), 200px) rotate(var(--rot, 180deg)) scale(0.5); }
+}
+ 
+/* ===== SCREEN FLASH ===== */
+#screen-flash {
+  position: fixed; inset: 0; pointer-events: none;
+  z-index: 4000; opacity: 0;
+  background: white;
+  transition: opacity 0.05s;
+}
+ 
+/* ===== KONAMI / EASTER EGG ===== */
+#easter-egg {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(0,0,0,0.92);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 1rem;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+}
+#easter-egg.show { opacity: 1; pointer-events: all; }
+#easter-egg h2 { font-size: 18px; color: var(--yellow); text-shadow: 0 0 20px var(--yellow); }
+#easter-egg p  { font-size: 10px; color: var(--green); margin-top: 0.5rem; }
+#easter-egg button {
+  margin-top: 1rem; font-family: 'Press Start 2P', monospace;
+  font-size: 9px; padding: 12px 20px;
+  background: var(--green); color: #000; border: none; cursor: pointer;
+}
+ 
+/* ===== TRAIL ===== */
+.trail-dot {
+  position: fixed; pointer-events: none; z-index: 5500;
+  width: 6px; height: 6px;
+  image-rendering: pixelated;
+  animation: trailFade 0.5s ease forwards;
+}
+@keyframes trailFade {
+  0%   { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+</style>
+ 
+<!-- COMBO + FLASH + EASTER EGG -->
+<div id="combo-display"><span id="combo-num">0</span> COMBO!</div>
+<div id="screen-flash"></div>
+<div id="easter-egg">
+  <h2>🎮 CHEAT CODE ACTIVATED!</h2>
+  <p>↑ ↑ ↓ ↓ ← → ← → B A</p>
+  <p style="color:var(--cyan);margin-top:4px;">+30 LIVES GRANTED</p>
+  <button onclick="document.getElementById('easter-egg').classList.remove('show')">▶ CONTINUE</button>
+</div>
+ 
 <script>
-  // Custom cursor
-  const cursor = document.getElementById('cursor');
+/* ============================================================
+   PIXEL PORTFOLIO — FULL ANIMATION SYSTEM
+   ============================================================ */
+ 
+const COLORS = ['#00ff88','#00e5ff','#ffe600','#ff3c5f','#ff00ff','#ff8800','#ffffff'];
+const rndColor = () => COLORS[Math.floor(Math.random() * COLORS.length)];
+const rnd = (a, b) => Math.random() * (b - a) + a;
+const rndInt = (a, b) => Math.floor(rnd(a, b));
+ 
+/* ---- CURSOR (desktop only) ---- */
+const cursor = document.getElementById('cursor');
+const isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+let mx = 0, my = 0;
+if (!isTouchDevice) {
   document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX - 8 + 'px';
-    cursor.style.top = e.clientY - 8 + 'px';
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx - 8 + 'px';
+    cursor.style.top  = my - 8 + 'px';
+    if (Math.random() < 0.25) spawnTrail(mx, my);
   });
-  document.addEventListener('mousedown', () => cursor.style.transform = 'scale(0.7)');
-  document.addEventListener('mouseup', () => cursor.style.transform = 'scale(1)');
+  document.addEventListener('mousedown', () => { cursor.style.transform = 'scale(0.6)'; cursor.style.background = rndColor(); });
+  document.addEventListener('mouseup',   () => { cursor.style.transform = 'scale(1)'; });
+}
  
-  // Scroll reveal
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) e.target.classList.add('visible');
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.observe').forEach(el => obs.observe(el));
+/* ---- MOUSE TRAIL ---- */
+function spawnTrail(x, y) {
+  const d = document.createElement('div');
+  d.className = 'trail-dot';
+  const c = rndColor();
+  d.style.cssText = `left:${x}px;top:${y}px;background:${c};box-shadow:0 0 4px ${c};`;
+  document.body.appendChild(d);
+  setTimeout(() => d.remove(), 500);
+}
  
-  // Skill bar animation
-  const skillObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.querySelectorAll('.skill-fill').forEach(bar => {
-          const w = bar.style.width;
-          bar.style.width = '0';
-          setTimeout(() => bar.style.width = w, 200);
+/* ---- COMBO SYSTEM ---- */
+let combo = 0, comboTimer = null;
+const comboEl = document.getElementById('combo-display');
+const comboNum = document.getElementById('combo-num');
+function addCombo() {
+  combo++;
+  comboNum.textContent = combo;
+  comboEl.classList.add('show');
+  comboNum.style.color = rndColor();
+  clearTimeout(comboTimer);
+  comboTimer = setTimeout(() => { combo = 0; comboEl.classList.remove('show'); }, 1800);
+  if (combo > 0 && combo % 10 === 0) bigComboEffect();
+}
+function bigComboEffect() {
+  const flash = document.getElementById('screen-flash');
+  flash.style.background = rndColor();
+  flash.style.opacity = '0.12';
+  setTimeout(() => flash.style.opacity = '0', 120);
+  showLabel(window.innerWidth/2, window.innerHeight/2, combo + 'x COMBO!!', 14, rndColor());
+}
+ 
+/* ---- CLICK LABEL ---- */
+const WORDS = ['PIXEL!','BOOM!','WOW!','NICE!','FIRE!','GG!','EZ!','POW!','ZAP!','WIN!','OP!','YOSH!'];
+function showLabel(x, y, text, size, color) {
+  const el = document.createElement('div');
+  el.className = 'click-label';
+  el.textContent = text;
+  el.style.cssText = `left:${x}px;top:${y}px;color:${color};font-size:${size||9}px;text-shadow:0 0 8px ${color};`;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 900);
+}
+ 
+/* ---- PIXEL EXPLOSION ---- */
+function pixelExplosion(x, y) {
+  const count = 14;
+  for (let i = 0; i < count; i++) {
+    const size = rndInt(4, 12);
+    const c = rndColor();
+    const angle = (i / count) * Math.PI * 2 + rnd(-0.3, 0.3);
+    const dist = rnd(40, 110);
+    const tx = Math.cos(angle) * dist;
+    const ty = Math.sin(angle) * dist;
+    const dur = rnd(0.5, 0.9);
+    const el = document.createElement('div');
+    el.className = 'px-particle';
+    el.style.cssText = `
+      left:${x}px; top:${y}px;
+      width:${size}px; height:${size}px;
+      background:${c}; box-shadow:0 0 6px ${c};
+      --tx:${tx}px; --ty:${ty}px; --dur:${dur}s;
+    `;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), dur * 1000 + 100);
+  }
+}
+ 
+/* ---- RIPPLE WAVES ---- */
+function rippleWave(x, y) {
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      const c = rndColor();
+      const el = document.createElement('div');
+      el.className = 'ripple-wave';
+      el.style.cssText = `left:${x}px;top:${y}px;--rc:${c};border-color:${c};`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 700);
+    }, i * 120);
+  }
+}
+ 
+/* ---- MINI SPRITES ---- */
+const SPRITES = [
+  // Human pixel
+  (c) => `<svg width="14" height="20" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="0" width="3" height="3" fill="${c}"/>
+    <rect x="1" y="3" width="5" height="4" fill="${c}"/>
+    <rect x="1" y="7" width="2" height="3" fill="${c}"/>
+    <rect x="4" y="7" width="2" height="3" fill="${c}"/>
+  </svg>`,
+  // Star
+  (c) => `<svg width="16" height="16" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="0" width="2" height="2" fill="${c}"/>
+    <rect x="1" y="2" width="6" height="2" fill="${c}"/>
+    <rect x="0" y="3" width="8" height="2" fill="${c}"/>
+    <rect x="1" y="5" width="6" height="2" fill="${c}"/>
+    <rect x="2" y="6" width="1" height="2" fill="${c}"/>
+    <rect x="5" y="6" width="1" height="2" fill="${c}"/>
+  </svg>`,
+  // Coin
+  (c) => `<svg width="14" height="14" viewBox="0 0 7 7" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="0" width="3" height="1" fill="${c}"/>
+    <rect x="1" y="1" width="5" height="1" fill="${c}"/>
+    <rect x="0" y="2" width="7" height="3" fill="${c}"/>
+    <rect x="1" y="5" width="5" height="1" fill="${c}"/>
+    <rect x="2" y="6" width="3" height="1" fill="${c}"/>
+    <rect x="2" y="2" width="1" height="3" fill="#000" opacity="0.4"/>
+    <rect x="4" y="2" width="1" height="3" fill="#fff" opacity="0.3"/>
+  </svg>`,
+  // Monster
+  (c) => `<svg width="16" height="16" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="6" height="5" fill="${c}"/>
+    <rect x="2" y="2" width="1" height="1" fill="#000"/>
+    <rect x="5" y="2" width="1" height="1" fill="#000"/>
+    <rect x="0" y="3" width="1" height="2" fill="${c}"/>
+    <rect x="7" y="3" width="1" height="2" fill="${c}"/>
+    <rect x="2" y="5" width="1" height="2" fill="${c}"/>
+    <rect x="5" y="5" width="1" height="2" fill="${c}"/>
+    <rect x="3" y="4" width="2" height="1" fill="#000"/>
+  </svg>`,
+  // Heart
+  (c) => `<svg width="14" height="14" viewBox="0 0 7 7" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="2" height="1" fill="${c}"/>
+    <rect x="4" y="1" width="2" height="1" fill="${c}"/>
+    <rect x="0" y="2" width="3" height="2" fill="${c}"/>
+    <rect x="4" y="2" width="3" height="2" fill="${c}"/>
+    <rect x="1" y="4" width="5" height="1" fill="${c}"/>
+    <rect x="2" y="5" width="3" height="1" fill="${c}"/>
+    <rect x="3" y="6" width="1" height="1" fill="${c}"/>
+  </svg>`,
+];
+ 
+function spawnSprite(x, y) {
+  const sprFn = SPRITES[rndInt(0, SPRITES.length)];
+  const c = rndColor();
+  const svg = sprFn(c);
+  const el = document.createElement('div');
+  el.className = 'mini-sprite';
+  const sx  = rnd(-50, 50);
+  const sx2 = rnd(-80, 80);
+  const rot = rnd(120, 360);
+  const dur = rnd(1.4, 2.2);
+  el.style.cssText = `left:${x}px;top:${y}px;--sx:${sx}px;--sx2:${sx2}px;--rot:${rot}deg;--fdur:${dur}s;`;
+  el.innerHTML = svg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), dur * 1000 + 100);
+}
+ 
+/* ---- WEB AUDIO ENGINE ---- */
+let audioCtx = null;
+function getAudioCtx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+ 
+function playSound(type) {
+  try {
+    const ctx = getAudioCtx();
+    const master = ctx.createGain();
+    master.gain.setValueAtTime(0.18, ctx.currentTime);
+    master.connect(ctx.destination);
+ 
+    const sounds = {
+      // Classic 8-bit beep
+      beep: () => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(master);
+        o.type = 'square';
+        const freqs = [523, 659, 784, 1047, 880, 698];
+        o.frequency.setValueAtTime(freqs[rndInt(0,freqs.length)], ctx.currentTime);
+        g.gain.setValueAtTime(1, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
+        o.start(); o.stop(ctx.currentTime + 0.15);
+      },
+      // Pixel pop — short blip
+      pop: () => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(master);
+        o.type = 'sine';
+        o.frequency.setValueAtTime(800, ctx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(200, ctx.currentTime + 0.08);
+        g.gain.setValueAtTime(1, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+        o.start(); o.stop(ctx.currentTime + 0.1);
+      },
+      // Coin collect — rising arpeggio
+      coin: () => {
+        [523, 659, 784, 1047].forEach((f, i) => {
+          const o = ctx.createOscillator();
+          const g = ctx.createGain();
+          o.connect(g); g.connect(master);
+          o.type = 'triangle';
+          o.frequency.setValueAtTime(f, ctx.currentTime + i * 0.05);
+          g.gain.setValueAtTime(0.8, ctx.currentTime + i * 0.05);
+          g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.05 + 0.1);
+          o.start(ctx.currentTime + i * 0.05);
+          o.stop(ctx.currentTime + i * 0.05 + 0.12);
         });
+      },
+      // Laser zap
+      laser: () => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(master);
+        o.type = 'sawtooth';
+        o.frequency.setValueAtTime(1200, ctx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.2);
+        g.gain.setValueAtTime(1, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
+        o.start(); o.stop(ctx.currentTime + 0.22);
+      },
+      // Explosion thud
+      boom: () => {
+        const buf = ctx.createBuffer(1, ctx.sampleRate * 0.3, ctx.sampleRate);
+        const data = buf.getChannelData(0);
+        for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / data.length, 2);
+        const src = ctx.createBufferSource();
+        const g = ctx.createGain();
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'lowpass'; filter.frequency.value = 200;
+        src.buffer = buf;
+        src.connect(filter); filter.connect(g); g.connect(master);
+        g.gain.setValueAtTime(2, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+        src.start(); src.stop(ctx.currentTime + 0.32);
+      },
+      // Synthwave chord
+      synth: () => {
+        const chords = [[262,330,392],[294,370,440],[330,415,494],[349,440,523]];
+        const chord = chords[rndInt(0,chords.length)];
+        chord.forEach(f => {
+          const o = ctx.createOscillator();
+          const g = ctx.createGain();
+          o.connect(g); g.connect(master);
+          o.type = 'sawtooth';
+          o.frequency.setValueAtTime(f, ctx.currentTime);
+          g.gain.setValueAtTime(0.3, ctx.currentTime);
+          g.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.25);
+          o.start(); o.stop(ctx.currentTime + 0.28);
+        });
+      },
+      // Power-up sweep
+      powerup: () => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(master);
+        o.type = 'square';
+        o.frequency.setValueAtTime(200, ctx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(1600, ctx.currentTime + 0.3);
+        g.gain.setValueAtTime(0.8, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+        o.start(); o.stop(ctx.currentTime + 0.38);
+      },
+    };
+ 
+    const keys = Object.keys(sounds);
+    const pick = type || keys[rndInt(0, keys.length)];
+    sounds[pick]?.();
+  } catch(e) {}
+}
+ 
+// Hover sound — subtle tick
+function playHoverTick() {
+  try {
+    const ctx = getAudioCtx();
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.connect(g); g.connect(ctx.destination);
+    o.type = 'square';
+    o.frequency.setValueAtTime(440, ctx.currentTime);
+    g.gain.setValueAtTime(0.04, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+    o.start(); o.stop(ctx.currentTime + 0.05);
+  } catch(e) {}
+}
+ 
+/* ---- MAIN CLICK HANDLER ---- */
+document.addEventListener('click', e => {
+  const x = e.clientX, y = e.clientY;
+  playSound(); // random sound every click
+  addCombo();
+  pixelExplosion(x, y);
+  rippleWave(x, y);
+  const sprCount = rndInt(2, 5);
+  for (let i = 0; i < sprCount; i++) {
+    setTimeout(() => spawnSprite(x + rnd(-20,20), y + rnd(-20,20)), i * 60);
+  }
+  const word = WORDS[rndInt(0, WORDS.length)];
+  showLabel(x + rnd(-30, 30), y - 20, word, 9, rndColor());
+});
+ 
+/* ---- BUTTON SPECIAL EFFECTS ---- */
+document.querySelectorAll('.btn, .skill-card, .project-card, .contact-item').forEach(el => {
+  el.addEventListener('click', function(e) {
+    playSound('coin');
+    for (let i = 0; i < 6; i++) {
+      setTimeout(() => {
+        const r = this.getBoundingClientRect();
+        pixelExplosion(r.left + rnd(0, r.width), r.top + rnd(0, r.height));
+      }, i * 80);
+    }
+  });
+  el.addEventListener('mouseenter', function() {
+    playHoverTick();
+    this.style.transition = 'all 0.1s';
+  });
+});
+ 
+/* ---- KONAMI CODE ---- */
+const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+let konamiIdx = 0;
+document.addEventListener('keydown', e => {
+  if (e.key === KONAMI[konamiIdx]) {
+    playHoverTick();
+    konamiIdx++;
+    if (konamiIdx === KONAMI.length) {
+      playSound('powerup');
+      setTimeout(() => playSound('coin'), 400);
+      document.getElementById('easter-egg').classList.add('show');
+      for (let i = 0; i < 30; i++) {
+        setTimeout(() => {
+          pixelExplosion(rnd(0, window.innerWidth), rnd(0, window.innerHeight));
+          spawnSprite(rnd(100, window.innerWidth-100), rnd(100, window.innerHeight-100));
+        }, i * 80);
       }
-    });
-  }, { threshold: 0.3 });
-  const skillsGrid = document.querySelector('.skills-grid');
-  if (skillsGrid) skillObs.observe(skillsGrid);
+      konamiIdx = 0;
+    }
+  } else { konamiIdx = 0; }
+});
+ 
+/* ---- SCROLL REVEAL ---- */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.observe').forEach(el => obs.observe(el));
+ 
+/* ---- SKILL BAR ---- */
+const skillObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-fill').forEach((bar, i) => {
+        const w = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = w;
+          playSound('beep');
+        }, 200 + i * 120);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+const skillsGrid = document.querySelector('.skills-grid');
+if (skillsGrid) skillObs.observe(skillsGrid);
+ 
+/* ---- IDLE AMBIENT PARTICLES ---- */
+setInterval(() => {
+  if (Math.random() < 0.3) {
+    const x = rnd(0, window.innerWidth);
+    const y = rnd(0, window.innerHeight);
+    const c = rndColor();
+    const el = document.createElement('div');
+    el.style.cssText = `
+      position:fixed;left:${x}px;top:${y}px;
+      width:3px;height:3px;background:${c};
+      pointer-events:none;z-index:100;
+      box-shadow:0 0 4px ${c};
+      animation:trailFade 1.5s ease forwards;
+    `;
+    el.className = 'trail-dot';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 1500);
+  }
+}, 400);
 </script>
  
 </body>
